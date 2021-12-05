@@ -55,3 +55,36 @@ body {
   color: rgba(255, 255, 255, 1);
   font-size: 2.5rem;
 }
+
+.footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.footer pre a {
+  font-size: 1rem;
+  padding-top: 2rem;
+  margin-right: 1rem;
+  color: blue;
+}
+
+@media (max-width: 400px) {
+  .calculator-grid {
+    grid-template-columns: repeat(4, 4.5rem);
+    grid-template-rows: minmax(5rem, auto) repeat(5, 5rem);
+  }
+
+  .calculator-grid > button {
+    font-size: 1.5rem;
+  }
+
+  .output .prev-operand {
+    font-size: 1rem;
+  }
+
+  .output .curr-operand {
+    color: rgba(255, 255, 255, 1);
+    font-size: 2rem;
+  }
+}
